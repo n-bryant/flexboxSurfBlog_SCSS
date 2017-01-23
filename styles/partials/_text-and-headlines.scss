@@ -1,0 +1,187 @@
+// General Styles
+// ------------------------------ //
+body {
+  font: 16px/1.6 $primaryColor;
+}
+
+h1, h2, h3 {
+  text-transform: uppercase;
+  color: $primaryColor;
+  font-family: $primaryFont;
+}
+
+// Header
+// ----------------------------- //
+.head-nav {
+  @extend h1;
+  font-family: $secondaryFont;
+  font-weight: 800;
+  text-align: right;
+}
+
+.title-hero {
+  color: #fff;
+  font-size: 4rem;
+}
+
+.title-sidekick {
+  font-weight: 600;
+  font-size: .65rem;
+  text-transform: none;
+}
+
+
+// Feature Content
+// ------------------------------- //
+.featured-article {
+  h2 {
+    font-size: 3rem;
+    font-weight: 900;
+  }
+  h3 {
+    color: $secondaryColor;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+}
+
+.featured-article {
+  p {
+   font-family: $primaryFont;
+   line-height: 1.6rem;
+   margin-bottom: 5%;
+
+   &:nth-of-type(2) > a {
+     color: $tertiaryColor;
+
+     &:hover {
+       color: $secondaryColor;
+       cursor: pointer;
+     }
+   }
+
+   &:nth-of-type(3) > a {
+     color: $secondaryColor;
+
+     &:hover {
+       color: $tertiaryColor;
+     }
+   }
+  }
+}
+
+.article-title {
+  font-family: $secondaryFont;
+
+  .by-line {
+    .author {
+      color: $secondaryColor;
+    }
+    .article-date {
+      color: $tertiaryColor;
+
+      a {
+        color: $tertiaryColor;
+
+        &:hover {
+          color: $secondaryColor;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+.action {
+
+  span {
+    color: #fff;
+  }
+}
+
+
+// Sidebar
+.sidebar {
+  a {
+    color: $tertiaryColor;
+    float: right;
+
+    &:hover {
+      color: $secondaryColor;
+    }
+  }
+
+  h3 {
+    clear: right;
+    color: $secondaryColor;
+    font: 600 1.25rem $primaryFont;
+    padding-top: 10%;
+  }
+
+  p {
+    color: $tertiaryColor;
+    font-family: $primaryFont;
+    line-height: 1.6rem;
+  }
+}
+
+.social {
+  color: $secondaryColor;
+  font-family: $secondaryFont;
+
+  .author {
+    color: $secondaryColor;
+    font-size: 1.25rem;
+  }
+
+  a {
+    color: $tertiaryColor;
+    font-family: $secondaryFont;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+
+// Popular Posts
+// ------------------------------- //
+.popular-posts {
+  text-align: center;
+
+  h2 {
+    font-size: 4rem;
+    font-weight: 900;
+    margin-top: 2%;
+  }
+
+  .post {
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: left;
+
+    &:hover {
+      h3 {
+        color: #fff;
+      }
+    }
+  }
+}
+
+// Footer
+// ------------------------------- //
+footer {
+  color: $tertiaryColor;
+
+  span {
+    font-family: $primaryFont;
+  }
+
+  a {
+    color: $tertiaryColor;
+    font-family: $primaryFont;
+    text-decoration: none;
+  }
+}

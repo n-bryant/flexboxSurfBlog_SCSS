@@ -1,0 +1,27 @@
+.has-upper-spacer {
+
+  &:before {
+    background: $tertiaryColor;
+    content: '';
+    display: block;
+    height: 1px;
+    margin: 0 auto;
+    outline: none;
+    width: 100%;
+  }
+}
+
+.has-left-spacer {
+  border-left: 1px solid $tertiaryColor;
+}
+
+.has-right-spacer {
+  &:after {
+    background: $tertiaryColor;
+    content: "";
+    display: inline-block;;
+    height: 1rem;
+    margin: -2px 5px;
+    width: 1px;
+  }
+}

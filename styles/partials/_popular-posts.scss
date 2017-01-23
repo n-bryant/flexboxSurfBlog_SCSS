@@ -1,0 +1,38 @@
+.popular-posts {
+
+  .posts-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 3%;
+
+    @each $currentImg in $postImg{
+      $index: index($postImg, $currentImg);
+      .post:nth-child(#{$index}) {
+        background: url(#{$currentImg})
+                    $blendColor;
+        background-blend-mode: soft-light;
+        background-size: cover;
+      }
+    }
+  }
+}
+
+.post {
+  height: 350px;
+  overflow: hidden;
+  position: relative;
+  transition: transform .5s;
+  width: 25%;
+
+  h3 {
+    bottom: 5%;
+    left: 5%;
+    position: absolute;
+    transition: bottom .5s;
+  }
+
+  &:hover {
+    cursor: pointer;
+    transform: translateY(-20px);
+  }
+}

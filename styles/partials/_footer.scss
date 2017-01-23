@@ -1,0 +1,32 @@
+footer {
+  background: $primaryColor;
+  display: flex;
+  justify-content: center;
+}
+
+.foot-strip {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  padding: 2%;
+  width: 85%;
+
+  .logo-container {
+    .logo {
+      width: 15%;
+    }
+  }
+
+  nav {
+    text-align: right;
+    width: 50%;
+
+    li {
+      display: inline-block;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

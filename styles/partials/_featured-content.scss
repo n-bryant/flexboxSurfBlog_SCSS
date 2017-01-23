@@ -1,0 +1,123 @@
+.portrait {
+  background: $blendColor url(../images/surfer-portrait.jpg);
+  background-blend-mode: soft-light;
+  background-size: cover;
+
+  &:hover {
+    background: rba(0,0,0,0) url(../images/surfer-portrait.jpg);
+    background-blend-mode: normal;
+    cursor: pointer;
+  }
+}
+
+.featured-content {
+  display: flex;
+  flex-direction: row;
+  margin: 5% auto;
+  width: 80%;
+
+}
+
+.featured-article {
+  padding-right: 10%;
+  width: 70%;
+
+  .excerpt {
+    margin: 0 0 25px 10px;
+
+    h3 {
+      padding: 15px;
+    }
+  }
+}
+
+.article-actions {
+  display: flex;
+  flex-direction: row;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  .fa {
+    color: #fff;
+  }
+}
+
+.action {
+  background: $tertiaryColor;
+  margin-right: 10px;
+  transition: transform .5s ease;
+
+  .fa {
+      background: #5E686F;
+      padding: 10px;
+  }
+
+  span {
+    padding: 10px;
+  }
+
+  &:hover {
+    transform: translateY(-10px);
+  }
+
+  &:last-of-type {
+    background: $secondaryColor;
+
+    .fa {
+      background: $primaryColor;
+    }
+  }
+}
+
+.by-line {
+  align-items: center;
+  display: flex;
+  height: 10%;
+  margin-bottom: 15px;
+  margin-top: 5px;
+
+  .portrait {
+    height: 25px;
+    width: 25px;
+  }
+
+  span {
+    margin: 5px;
+  }
+}
+
+.sidebar {
+  width: 30%;
+
+  .advert {
+    background: $blendColor url(../images/surf-ad.png);
+    background-blend-mode: soft-light;
+    background-size: cover;
+    height: 300px;
+    margin-bottom: 5px;
+
+    &:hover {
+      background: rba(0,0,0,0) url(../images/surfer-portrait.jpg);
+      background-blend-mode: normal;
+      cursor: pointer;
+    }
+  }
+}
+
+.social {
+  margin-bottom: 10%;
+  text-align: center;
+
+  .portrait {
+    height: 100px;
+    margin: 5px auto;
+    width: 100px;
+  }
+
+  li {
+    display: inline-block;
+    padding: 5px;
+  }
+}
